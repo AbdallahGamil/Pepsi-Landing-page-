@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.title1{
+    text-align: center;
+}
+.p1{
+    text-align: center;
+}
+.div1{
+    background-color: red;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+#home{
+    height: 100vh;
+    background: #0162be;
+    color: #fff;
+
+}
+nav .logo{
+width: 50px;
+}
+.container{
+    margin: 0 7rem;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color:#fff;
+    padding: 20px;
+}
+#home .content{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70%;
+}
+#home .content img{
+    width: 220px;
+    animation: animation1 3s ease-out;
+}
+#home .content .content-text h1{
+    font-size: 40px;
+    font-weight:900;
+    margin-bottom: 10px;
+}
+#home .content .content-text h1 span{
+    font-size: 70px;
+}
+#home .content .content-text  p{
+font-weight: 300;
+margin-bottom: 30px;
+line-height: 1.4;
+width: 60%;
+}
+.btn{
+    background-color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #000;
+    transition: all 0.2s;
+}
+.btn:hover{
+    background-color: transparent;
+    color:#fff;
+    border:1px solid #fff;
+
+}
+.social{
+    margin-left:3rem;
+    animation: animation1 3s ease-out;
+}
+.social i {
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0 ;
+}
+.pepsi-types{
+    width:100px;
+    margin: auto;
+    display: block;
+    animation: animation2 3s ease-out;
+}
+@keyframes animation1{
+    0%{transform: translatex(500px);
+    }
+    100%{transform: translateX(0px);
+    }
+
+}
+@keyframes animation2{
+    0%{transform: translatey(200px);
+    }
+    100%{transform: translatey(0px);
+    }
+
+}
+/* Tablet */
+@media(max-width:900px){
+    .container{
+        margin: 0 1rem;
+    }
+    nav ul a{
+        padding: 10px;
+    }
+    #home .content{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0 0 ;
+    }
+    #home .content .content-text{
+        margin-bottom: 2rem;
+    }
+    #home .content .content-text  p{
+        width: 100%;
+    }
+    #home .content img{
+        width:100px;
+        margin-bottom: 10px;
+    }
+    .social{
+        margin-left:0rem;
+        margin-bottom: 15px;
+    }
+}
+/* Mobile */
+@media(max-width:600px){
+    nav{
+        display: block;
+    }
+    nav .logo{
+        display: block;
+        margin: 0 auto 15px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul a{
+        font-size: 12px;
+    }
+    .pepsi-types{
+        margin-top: 15px;
+    }
+    
+    
+}
